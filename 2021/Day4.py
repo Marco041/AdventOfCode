@@ -1,5 +1,3 @@
-import numpy as np
-
 def parse_board_input(lines, line_size):
     n_boards = len(lines) // line_size
     boards = []
@@ -17,8 +15,8 @@ def calc_winner(board_size, boards, draws):
                 if(draw == num):
                     boards[line_num][index] = 0
                     winner_board_numer =  line_num//board_size
-                    index_board = winner_board_numer*board_size
                     if(winner_board_numer not in excluded_board):
+                        index_board = winner_board_numer*board_size
                         col_sum = sum([x[index] for x in boards[index_board:index_board+board_size]])
                         if(sum(boards[line_num]) == 0 or col_sum == 0):
                             s = sum(sum(n) for n in boards[index_board:index_board+board_size])*draw
