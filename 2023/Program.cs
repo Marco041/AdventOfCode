@@ -16,3 +16,4 @@ executeWithStopWatch(() => Day4.Execute("Input/Day4.txt"));
 executeWithStopWatch(() => Day5.Execute("Input/Day5.txt"));
 executeWithStopWatch(() => Day6.Execute("Input/Day6.txt"));
 executeWithStopWatch(() => Day7.Execute("Input/Day7.txt"));
+executeWithStopWatch(() => Day8.Execute("Input/Day8.txt"));

@@ -4,10 +4,10 @@ public class Day7
     {
         var input = File.ReadAllLines(inputPath);
 
-        var result1 = Part1(input);
+        var result1 = GetScore(input);
         Console.WriteLine($"Day 7 - Part 1: {result1}");
 
-        var result2 = Part1(input, true);
+        var result2 = GetScore(input, true);
         Console.WriteLine($"Day 7 - Part 2: {result2}");
     }
 
@@ -17,7 +17,7 @@ public class Day7
         { '9', 5 },{ '8', 6 },{ '7', 7 },{ '6', 8 },{ '5', 9 }, { '4', 10 }, { '3', 11 }, { '2', 12 }
     };
 
-    public static int Part1(string[] input, bool withJolly = false)
+    public static int GetScore(string[] input, bool withJolly = false)
     {
         if(withJolly)
         {
